@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Layanan Pemerintah Kota Bima</title>
+    
+    <link rel="icon" href="faviconlogo.png" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<!-- skrip live chat awal -->
+<script>
+    window.__lc = window.__lc || {};
+    window.__lc.license = 18937044;
+    window.__lc.integration_name = "manual_onboarding";
+    window.__lc.product_name = "livechat";
+    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+</script>
+<noscript><a href="https://www.livechat.com/chat-with/18937044/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+<!-- skrip live chat akhir -->
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="logokota2.png" alt="Logo Kota Bima">
+            </div>
+            <h1>PEMERINTAH KOTA BIMA</h1>
+            <div class="datetime-container">
+                <i class="fas fa-calendar-alt"></i>
+                <div id="current-date"></div>
+                <i class="fas fa-clock"></i>
+                <div id="current-time"></div>
+            </div>
+        </header>
+
+        <main class="menu-container">
+            <div class="search-container">
+                <input type="text" id="service-search" placeholder="Cari Layanan..." autocomplete="off">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-button" data-service="cctv" data-keywords="keamanan monitoring">
+                    <img src="cctv.png" alt="CCTV">
+                    <span>CCTV</span>
+                </div>
+                <div class="menu-button" data-service="cuaca" data-keywords="prakiraan cuaca informasi">
+                    <img src="cuaca.png" alt="Cuaca">
+                    <span>Cuaca</span>
+                </div>
+                <div class="menu-button" data-service="ipkd" data-keywords="keuangan daerah">
+                    <img src="IPKD.png" alt="IPKD">
+                    <span>IPKD</span>
+                </div>
+                <div class="menu-button" data-service="layanan-aspirasi" data-keywords="pengaduan masyarakat">
+                    <img src="layanan aspirasi.png" alt="Layanan Aspirasi">
+                    <span>Layanan Aspirasi</span>
+                </div>
+                <div class="menu-button" data-service="informasi-publik" data-keywords="informasi publik">
+                    <img src="Informasi Publik.png" alt="Informasi Publik">
+                    <span>Layanan Informasi Publik</span>
+                </div>
+                <div class="menu-button" data-service="kepegawaian" data-keywords="pegawai kepegawaian">
+                    <img src="Layanan Kepegawaian.png" alt="Kepegawaian">
+                    <span>Layanan Kepegawaian</span>
+                </div>
+                <div class="menu-button" data-service="pengadaan-elektronik" data-keywords="pengadaan barang">
+                    <img src="Layanan Pengadaan.png" alt="Pengadaan Elektronik">
+                    <span>Pengadaan Elektronik</span>
+                </div>
+                <div class="menu-button" data-service="pengadilan-negri" data-keywords="hukum peradilan">
+                    <img src="Pengadilan Negeri.png" alt="Pengadilan Negeri">
+                    <span>Pengadilan Negeri</span>
+                </div>
+                <div class="menu-button" data-service="sekolah" data-keywords="pendidikan sekolah">
+                    <img src="sekolah.png" alt="Sekolah">
+                    <span>Sekolah</span>
+                </div>
+                <div class="menu-button" data-service="smartcity" data-keywords="teknologi kota">
+                    <img src="smartcity.png" alt="SmartCity">
+                    <span>SmartCity</span>
+                </div>
+                <div class="menu-button" data-service="statistik-website" data-keywords="analitik data">
+                    <img src="Statistik.png" alt="Statistik Website">
+                    <span>Statistik Website</span>
+                </div>
+                <div class="menu-button" data-service="unit-pelayanan" data-keywords="pelayanan teknis">
+                    <img src="Pelayanan Teknis.png" alt="Unit Pelayanan">
+                    <span>Unit Pelayanan</span>
+                </div>
+                <div class="menu-button" data-service="perangkat-daerah" data-keywords="website pemerintahan">
+                    <img src="Web Perangkat Daerah.png" alt="Website Perangkat Daerah">
+                    <span>Website Perangkat Daerah</span>
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logokota2.png" alt="Logo Kota Bima">
+                </div>
+                <div class="footer-info">
+                    <h3>Pemerintah Kota Bima</h3>
+                    <p>Jalan Soekarno-Hatta No. 1, Kota Bima</p>
+                    <p>Telepon: (0374) 123456</p>
+                    <p>Email: layanan@kotabima.go.id</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="#">Beranda</a></li>
+                        <li><a href="#">Profil</a></li>
+                        <li><a href="#">Layanan</a></li>
+                        <li><a href="#">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-sosmed">
+                    <h4>Ikuti Kami</h4>
+                    <div class="sosmed-icons">
+                        <a href="#" class="sosmed-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="sosmed-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="sosmed-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Prototype ini dibuat Oleh Yadi Suputra.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
